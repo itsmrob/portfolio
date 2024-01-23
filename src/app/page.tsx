@@ -3,7 +3,7 @@ import HeroSection from "@/components/HeroSection";
 export default function Home() {
   return (
     <div className='container mx-auto p-4'>
-      <section className="introduction-section min-h-screen flex items-center justify-center">
+      <section className="flex items-center justify-center mt-14">
         <HeroSection />
       </section>
       {/* <section className="stack-section min-h-screen flex items-center justify-center">

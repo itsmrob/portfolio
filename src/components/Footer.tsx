@@ -6,7 +6,7 @@ import EmailLogo from '@/images/email.png';
 import XLogo from '@/images/gorjeo.png';
 import IGLogo from '@/images/instagram.png';
 import LinkedinLogo from '@/images/linkedin.png';
-import Myself from '@/images/myself.jpg';
+import profilePic from '@/images/me.jpg';
 
 import { FOOTER_LINKS } from '@/constants';
 
@@ -17,7 +17,7 @@ const Footer: React.FC = () => {
             <div className="max-w-6xl mx-auto flex justify-between items-center">
                 <div className="flex items-center">
                     <Image
-                        src={Myself} // Replace with your actual profile image path
+                        src={profilePic} // Replace with your actual profile image path
                         alt="Profile picture"
                         width={40}
                         height={40}
