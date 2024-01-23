@@ -6,12 +6,12 @@ export default function Home() {
       <section className="introduction-section min-h-screen flex items-center justify-center">
         <HeroSection />
       </section>
-      <section className="stack-section min-h-screen flex items-center justify-center">
+      {/* <section className="stack-section min-h-screen flex items-center justify-center">
         <p>Here goes my stack of technologies</p>
-      </section>
-      <section className="projects-section min-h-screen flex items-center justify-center">
+      </section> */}
+      {/* <section className="projects-section min-h-screen flex items-center justify-center">
         <p>Here goes my projects and GitHub links</p>
-      </section>
+      </section> */}
     </div>
   );
 }

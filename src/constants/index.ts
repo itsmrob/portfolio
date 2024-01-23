@@ -1,10 +1,17 @@
-export const NAV_LINKS = [
-    { href: '/blog', key: 'blog', label: 'Blog' },
-    { href: '/contact', key: 'contact', label: 'Contacto' },
+type NavLink = {
+    href: string;
+    key: string;
+    label: string;
+}
+
+export const NAV_LINKS: NavLink[] = [
+    { href: '/', key: 'home', label: 'Home' },
+    { href: '/blog', key: 'blog', label: 'Writing' },
+    { href: '/contact', key: 'contact', label: 'Contact' },
 ]
 
-export const FOOTER_LINKS = [
-    { href: '/about', key: 'about', label: 'Sobre mi' },
-    { href: '/tools', key: 'tools', label: 'Herramientas' },
-    { href: '/contact', key: 'contact', label: 'Contactos' },
+export const FOOTER_LINKS: NavLink[] = [
+    { href: '/about', key: 'about', label: 'About' },
+    { href: '/tools', key: 'tools', label: 'Tools' },
+    { href: '/contact', key: 'contact', label: 'Contact' },
 ]
