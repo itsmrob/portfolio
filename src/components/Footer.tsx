@@ -1,55 +1,54 @@
 import React from 'react';
 import Image from 'next/image';
-
-import GithubLogo from '@/images/github-mark.png';
-import EmailLogo from '@/images/email.png';
-import XLogo from '@/images/gorjeo.png';
-import IGLogo from '@/images/instagram.png';
-import LinkedinLogo from '@/images/linkedin.png';
 import profilePic from '@/images/me.jpg';
 
-import { FOOTER_LINKS } from '@/constants';
+import { FOOTER_LINKS, FOOTER_SOCIAL } from '@/constants';
+import Link from 'next/link';
 
 const Footer: React.FC = () => {
-    const [about, tools, contact] = FOOTER_LINKS;
     return (
-        <footer className="w-full bg-gray-100 py-4 px-6">
-            <div className="max-w-6xl mx-auto flex justify-between items-center">
-                <div className="flex items-center">
-                    <Image
-                        src={profilePic} // Replace with your actual profile image path
-                        alt="Profile picture"
-                        width={40}
-                        height={40}
-                        className="rounded-full"
-                    />
-                    <span className="ml-4 text-sm">
-                        © Desde el 2018
-                    </span>
+        <footer className="pt-6 pb-10">
+            <div className='w-full border-t border-amber-950/10 pb-5'></div>
+            <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 justify-between items-center">
+                <div className='flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-3 items-center'>
+                    <div className='hidden md:block relative overflow-hidden rounded-full'>
+                        <Image
+                            src={profilePic}
+                            alt="Profile picture"
+                            width={40}
+                            height={40}
+                            // className="rounded-full"
+                        />
+                    </div>
+                    <div className="flex flex-col items-center md:items-start text-black">
+                        <span className="ml-4 text-sm"> © Desde el 2018 </span>
+                        <div className='flex space-x-2 items-center'>
+                            <span className='ml-4 text-sm'> Hecho en Guate! 🇬🇹</span>
+                        </div>
+                    </div>
                 </div>
-                <div className="flex items-center space-x-4">
-                    <a href="https://twitter.com" aria-label="Twitter" target="_blank" rel="noopener noreferrer">
-                        <Image src={XLogo} alt='Check out my GitHub Repository' width={30} height={30} />
-                    </a>
-                    <a href="https://github.com" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
-                        <Image src={GithubLogo} alt='Check out my GitHub Repository' width={30} height={30} />
-                    </a>
-                    <a href="https://instagram.com" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
-                        <Image src={IGLogo} alt='Check out my GitHub Repository' width={30} height={30} />
-                    </a>
-                    <a href="https://linkedin.com" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
-                        <Image src={LinkedinLogo} alt='Check out my GitHub Repository' width={30} height={30} />
-                    </a>
-                    <a href="mailto:email@example.com" aria-label="Email">
-                        <Image src={EmailLogo} alt='Check out my GitHub Repository' width={30} height={30} />
-                    </a>
-                </div>
-                <div className="text-sm">
-                    <a href={about.href} className="hover:underline">{about.label}</a>
-                    <span className="mx-2">·</span>
-                    <a href={tools.href} className="hover:underline">{tools.label}</a>
-                    <span className="mx-2">·</span>
-                    <a href={contact.href} className="hover:underline">{contact.label}</a>
+                <div className='flex flex-col md:flex-row space-y-3 md:space-y-0 md:space-x-5 items-center'>
+                    <div className="flex space-x-4 items-center text-black">
+                        {
+                            FOOTER_LINKS.map((link) => (
+                                <Link href={link.href} key={link.key} className='hover:underline'>
+                                    {link.label}
+                                </Link>
+                            ))
+                        }
+                    </div>
+                    <div className='hidden md:block rounded-full w-1 h-1 bg-slate-400'></div>
+                    <div className="flex space-x-3 items-center ">
+                        {
+                            FOOTER_SOCIAL.map((link) => (
+                                <div className='w-5 h-5 relative'>
+                                    <a href={link.href} key={link.key} aria-label={link.label} target='_blank' rel='noopener noreferrer"'>
+                                        <Image src={"/images" + link.icon || ""} alt={link.label} objectFit='cover' layout='fill' />
+                                    </a>
+                                </div>
+                            ))
+                        }
+                    </div>
                 </div>
             </div>
         </footer>

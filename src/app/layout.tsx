@@ -18,7 +18,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en">
       <body className={roboto.className}>
-        <div className='flex flex-col '>
+        <div className=' '>
           <div className='w-full mx-auto lg:px-8 xl:px-[15%] '>
             <Nav />
             <main className='app'>

@@ -8,7 +8,6 @@ import cvLogo from '@/images/cv.png'
 import Link from 'next/link';
 import Image from 'next/image';
 
-
 const Nav: React.FC = () => {
 
     const router = useRouter();
@@ -21,7 +20,7 @@ const Nav: React.FC = () => {
         if (isMenuOpen) {
             setIsMenuOpen(false)
         }
-    }, [pathname])
+    }, [pathname]);
 
     return (
         <header className="flex justify-between max-container padding-container relative py-5 px-2">
@@ -37,7 +36,6 @@ const Nav: React.FC = () => {
                     onClick={() => setIsMenuOpen(!isMenuOpen)}
                     className="p-2 rounded-md text-gray-800 hover:bg-gray-200"
                     aria-label="Toggle navigation menu"
-
                 >
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -55,16 +53,13 @@ const Nav: React.FC = () => {
                     </svg>
                 </button>
             </div>
-            <nav className={`md:flex ${isMenuOpen ? 'flex' : 'hidden'} flex-col lg:flex-row lg:items-center absolute lg:static top-full left-0 w-full lg:w-auto bg-white shadow-md lg:shadow-none`}>
+            <nav className={`flex ${isMenuOpen ? '' : 'hidden'} flex-col lg:flex lg:flex-row absolute lg:static top-full left-0 w-full lg:w-auto lg:shadow-none`}>
                 {NAV_LINKS.map((link) => (
-                    <Link href={link.href} className={`${isMenuOpen ? 'text-white' : 'text-gray-600'} hover:text-gray-800 font-medium px-4 py-2 rounded-lg ${link.href === pathname ? 'text-blue-600 border-b-2 border-blue-600' : ''}`}>
+                    <Link key={link.key} href={link.href} className={`text-black hover:bg-gray-300 font-medium px-4 py-2 rounded-lg ${link.href === pathname ? 'text-blue-600 border-b-2 border-blue-600' : ''}`}>
                         {link.label}
                     </Link>
                 ))}
-                <button
-                    className="p-1 rounded-md bg-gray-200 hover:bg-gray-300"
-                    onClick={() => alert('Downloading CV')}
-                >
+                <button className="p-1 px-4 rounded-md hover:bg-gray-300" onClick={() => alert('Downloading CV')} >
                     <Image src={cvLogo} alt="Resume" width={30} height={30} className="rounded-full" />
                 </button>
             </nav>
