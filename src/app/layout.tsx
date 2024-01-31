@@ -19,7 +19,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en">
       <body className={roboto.className}>
         <div className=' '>
-          <div className='w-full mx-auto lg:px-8 xl:px-[15%] '>
+          <div className='w-full mx-auto lg:px-8 xl:px-[15%] px-4'>
             <Nav />
             <main className='app'>
               {children}

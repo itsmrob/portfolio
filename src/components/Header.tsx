@@ -23,9 +23,9 @@ const Nav: React.FC = () => {
     }, [pathname]);
 
     return (
-        <header className="flex justify-between max-container padding-container relative py-5 px-2">
+        <header className="flex justify-between max-container padding-container relative py-4 sm:py-12">
             <Link href="/">
-                <div className="flex items-center space-x-4 pl-4">
+                <div className="flex items-center space-x-4">
                     <Image src={profilePic} alt="Profile" width={40} height={40} className="rounded-full" />
                     <span className="font-semibold text-black">Roberto Lopez</span>
                     <span className="bg-blue-500 text-white text-xs rounded-full px-2 py-1">✓</span>
@@ -59,7 +59,7 @@ const Nav: React.FC = () => {
                         {link.label}
                     </Link>
                 ))}
-                <button className="p-1 px-4 rounded-md hover:bg-gray-300" onClick={() => alert('Downloading CV')} >
+                <button className="px-4 rounded-md hover:bg-gray-300" onClick={() => alert('Downloading CV')} >
                     <Image src={cvLogo} alt="Resume" width={30} height={30} className="rounded-full" />
                 </button>
             </nav>
