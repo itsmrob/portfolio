@@ -2,7 +2,7 @@ import React from 'react';
 
 const HeroSection: React.FC = () => {
     return (
-        <section className='container lg:mx-auto py-12'>
+        <section className='container lg:mx-auto py-12 pb-20'>
             <div className="flex flex-col gap-4">
                 <div className="w-3/4">
                     <h2 className="text-lg font-semibold" style={{ color: "#ff335f" }}>HELLO, MY NAME IS ROB </h2>

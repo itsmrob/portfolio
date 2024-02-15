@@ -1,4 +1,4 @@
-import FeaturedTechs from "@/components/FeaturedTechs";
+import TechSection from "@/components/TechSection";
 import HeroSection from "@/components/HeroSection";
 import { TechStack } from "@/types/TechStack";
 
@@ -15,6 +15,7 @@ export default function Home() {
   return (
     <>
       <HeroSection/>
+      <TechSection technologyStack={technologies}/>
     </>
   );
 }

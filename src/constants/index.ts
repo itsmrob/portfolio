@@ -1,9 +1,4 @@
-type NavLink = {
-    href: string;
-    key: string;
-    label: string;
-    icon?: string;
-}
+import { NavLink } from "@/types/NavLinks"
 
 export const NAV_LINKS: NavLink[] = [
     { href: '/', key: 'home', label: 'Home' },
