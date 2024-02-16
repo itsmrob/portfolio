@@ -31,3 +31,18 @@ body {
     )
     rgb(var(--background-start-rgb)); */
 }
+
+.capriola-font {
+    font-family: var(--capriola-font);
+}
+
+.roboto-font {
+    font-family: var(--roboto-font);
+}
+
+.adventpro-font {
+  font-family: var(--adventPro-font);
+}
+.publicsans-font {
+  font-family: var(--publicSans-font);
+}

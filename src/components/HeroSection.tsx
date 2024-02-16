@@ -5,7 +5,7 @@ const HeroSection: React.FC = () => {
         <section className='container lg:mx-auto py-12 pb-20'>
             <div className="flex flex-col gap-4">
                 <div className="w-3/4">
-                    <h2 className="text-lg font-semibold" style={{ color: "#ff335f" }}>HELLO, MY NAME IS ROB </h2>
+                    <h2 className="text-lg font-semibold publicsans-font" style={{ color: "#ff335f" }}>HELLO, MY NAME IS ROB </h2>
                 </div>
                 <div className="flex flex-col  ">
                     <h1 className="text-4xl sm:text-7xl font-bold opacity-50" style={{ color: "#373a3c" }}>I build websites and mobile apps.</h1>

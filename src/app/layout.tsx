@@ -1,13 +1,9 @@
 import type { Metadata } from 'next'
-import { Inter, Roboto } from 'next/font/google'
-import Nav from '@/components/Header'
 import './globals.css'
-import Footer from '@/components/Footer'
+import Nav from '@/components/Header'
+import Footer from '@/components/Footer';
 
-const roboto = Roboto({
-  weight: '400',
-  subsets: ['latin'],
-})
+import { roboto, capriola, adventPro, publicSans } from '@/fonts/fonts';
 
 export const metadata: Metadata = {
   title: 'Rob Lopez | Software Engineer and developer',
@@ -16,9 +12,9 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
-      <body className={roboto.className}>
-        <div className=' '>
+    <html lang="en" className={`${capriola.variable} ${adventPro.variable} ${roboto.variable} ${publicSans.variable}`}>
+      <body>
+        <div>
           <div className='w-full mx-auto lg:px-8 xl:px-[15%] px-4'>
             <Nav />
             <main className='app'>
