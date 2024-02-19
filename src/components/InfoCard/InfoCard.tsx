@@ -1,14 +1,20 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 
 interface InfoCardProps {
-    children: React.ReactNode
+    title?: string;
+    titleClass?: string;
+    content?: string[];
+    contentClass?: string;
 }
 
-const InfoCard: React.FC<InfoCardProps> = ({ children }) => {
+const InfoCard: React.FC<InfoCardProps> = ({ title, titleClass, content = [], contentClass }) => {
     return (
-        <div className=''>
-            {children}
-        </div>
+        <Fragment>
+            <h1 className={titleClass}>{title}</h1>
+            {content.map((paragraph, index) => (
+                <p key={index} className={contentClass}>{paragraph}</p>
+            ))}
+        </Fragment>
     )
 }
 
