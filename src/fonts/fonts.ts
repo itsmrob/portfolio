@@ -1,4 +1,4 @@
-import { Roboto, Public_Sans, Advent_Pro, Capriola } from "next/font/google";
+import { Roboto, Public_Sans, Advent_Pro, Capriola, Roboto_Slab } from "next/font/google";
 
 export const roboto = Roboto({ 
     subsets: ['latin'], 
@@ -10,7 +10,7 @@ export const roboto = Roboto({
 export const publicSans = Public_Sans({
     subsets: ['latin'],
     display: 'swap',
-    variable: '--publicSans-font'
+    variable: '--public-sans-font'
 })
 
 export const capriola = Capriola({
@@ -23,3 +23,9 @@ export const adventPro = Advent_Pro({
     weight: "400",
     variable: "--advent-pro-font",
   });
+
+export const robotoSlab = Roboto_Slab({
+  subsets: ["latin"],
+  weight: '400',
+  variable: '--roboto-slab-font'
+})
