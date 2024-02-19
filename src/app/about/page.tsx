@@ -1,7 +1,8 @@
 import React from 'react'
 import Image from 'next/image'
-import me from '../../../public/images/me.jpg'
+// import me from '../../../public/images/me.jpg'
 import InfoCard from '@/components/InfoCard/InfoCard'
+import meInTheLake from '../../../public/images/lake.jpg';
 
 const aboutMe = [
     {
@@ -45,7 +46,7 @@ const About: React.FC = () => {
                 </header>
                 <div className="flex flex-col lg:flex-row py-10">
                     <div className="w-full lg:w-1/2 px-4 lg:px-10 mb-4 lg:mb-0 flex justify-center items-center">
-                        <Image src={me} alt="A picture of myself from 2021" style={{ maxWidth: '100%', height: 'auto' }} />
+                        <Image src={meInTheLake} alt="A picture of myself from 2021" style={{ maxWidth: '100%', height: 'auto' }} />
                     </div>
                     <div className="w-full lg:w-1/2 flex flex-col justify-center p-10 text-2xl robotoslab-font">
                         <p className='py-2'>I'm Roberto, a full stack developer based in El Caman, Guatemala</p>

@@ -17,13 +17,12 @@ const Footer: React.FC = () => {
                             alt="Profile picture"
                             width={40}
                             height={40}
-                            // className="rounded-full"
                         />
                     </div>
                     <div className="flex flex-col items-center md:items-start text-black">
-                        <span className="ml-4 text-sm robotoslab-font"> © Desde el 2018 </span>
+                        <span className="ml-4 text-sm robotoslab-font"> © Since 2018 </span>
                         <div className='flex space-x-2 items-center'>
-                            <span className='ml-4 text-sm robotoslab-font'> Hecho en Guate! 🇬🇹</span>
+                            <span className='ml-4 text-sm robotoslab-font'> Made in Guate! 🇬🇹</span>
                         </div>
                     </div>
                 </div>
