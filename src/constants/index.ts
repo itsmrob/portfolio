@@ -3,7 +3,8 @@ import { NavLink } from "@/types/NavLinks"
 export const NAV_LINKS: NavLink[] = [
     { href: '/', key: 'home', label: 'Home' },
     { href: '/blog', key: 'blog', label: 'Writing' },
-    { href: '/contact', key: 'contact', label: 'Contact' },
+    { href: '/about', key: 'about', label: 'About' },
+    { href: '/contact', key: 'contact', label: 'Contact' }
 ]
 
 export const FOOTER_LINKS: NavLink[] = [

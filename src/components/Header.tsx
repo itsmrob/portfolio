@@ -27,7 +27,7 @@ const Nav: React.FC = () => {
             <Link href="/">
                 <div className="flex items-center space-x-4">
                     <Image src={profilePic} alt="Profile" width={40} height={40} className="rounded-full" />
-                    <span className="font-semibold text-black">Roberto Lopez</span>
+                    <span className="font-semibold text-black robotoslab-font">Roberto Lopez</span>
                     <span className="bg-blue-500 text-white text-xs rounded-full px-2 py-1">✓</span>
                 </div>
             </Link>
@@ -53,9 +53,9 @@ const Nav: React.FC = () => {
                     </svg>
                 </button>
             </div>
-            <nav className={`flex ${isMenuOpen ? '' : 'hidden'} flex-col lg:flex lg:flex-row absolute lg:static top-full left-0 w-full lg:w-auto lg:shadow-none`}>
+            <nav className={`flex ${isMenuOpen ? '' : 'hidden'} flex-col lg:flex lg:flex-row absolute lg:static top-full left-0 w-full lg:w-auto lg:shadow-none `}>
                 {NAV_LINKS.map((link) => (
-                    <Link key={link.key} href={link.href} className={`text-black hover:bg-gray-300 font-medium px-4 py-2 rounded-lg ${link.href === pathname ? 'text-blue-600 border-b-2 border-blue-600' : ''}`}>
+                    <Link key={link.key} href={link.href} className={`text-black hover:bg-gray-300 font-medium px-4 py-2 rounded-lg robotoslab-font ${link.href === pathname ? 'text-blue-600 border-b-2 border-blue-600' : ''}`}>
                         {link.label}
                     </Link>
                 ))}

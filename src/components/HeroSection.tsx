@@ -8,7 +8,7 @@ const HeroSection: React.FC = () => {
                     <h2 className="text-lg font-semibold robotoslab-font" style={{ color: "#ff335f" }}>HELLO, MY NAME IS ROB </h2>
                 </div>
                 <div className="flex flex-col  ">
-                    <h1 className="text-4xl sm:text-7xl font-bold opacity-50" style={{ color: "#373a3c" }}>I build websites and mobile apps.</h1>
+                    <h1 className="text-4xl sm:text-7xl font-bold opacity-50 text-slate-900" >I build websites and mobile apps.</h1>
                     <p className="text-xl sm:text-3xl mt-4" style={{ color: "#373a3c" }}>
                         I'm a software engineer and developer based in Guatemala. I can make your ideas real.<br />
                     </p>
