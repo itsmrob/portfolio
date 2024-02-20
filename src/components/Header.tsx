@@ -8,7 +8,11 @@ import cvLogo from '@/images/cv.png'
 import Link from 'next/link';
 import Image from 'next/image';
 
+import DownloadButton from './DownloadButton/DownloadButton';
+
 const Nav: React.FC = () => {
+
+    const downloadCVUrl = "/files/EN_REAL_CV_2024.pdf";
 
     const router = useRouter();
     const pathname = usePathname();
@@ -23,7 +27,7 @@ const Nav: React.FC = () => {
     }, [pathname]);
 
     return (
-        <header className="flex justify-between max-container padding-container relative py-4 sm:py-12">
+        <header className="flex justify-between align-middle max-container padding-container relative py-2 sm:py-12">
             <Link href="/">
                 <div className="flex items-center space-x-4">
                     <Image src={profilePic} alt="Profile" width={40} height={40} className="rounded-full" />
@@ -53,15 +57,17 @@ const Nav: React.FC = () => {
                     </svg>
                 </button>
             </div>
-            <nav className={`flex ${isMenuOpen ? '' : 'hidden'} flex-col lg:flex lg:flex-row absolute lg:static top-full left-0 w-full lg:w-auto lg:shadow-none `}>
+            <nav className={`flex ${isMenuOpen ? '' : 'hidden'} flex-col lg:flex lg:flex-row absolute lg:static top-full left-0 w-full lg:w-auto lg:shadow-none py-2`}>
                 {NAV_LINKS.map((link) => (
-                    <Link key={link.key} href={link.href} className={`text-black hover:bg-gray-300 font-medium px-4 py-2 rounded-lg robotoslab-font ${link.href === pathname ? 'text-blue-600 border-b-2 border-blue-600' : ''}`}>
+                    <Link key={link.key} href={link.href} className={`flex items-center mx-1 hover:bg-gray-300 font-medium px-4 rounded-lg robotoslab-font ${link.href === pathname ? 'text-blue-600 border-b-2 border-blue-600' : ''}`}>
                         {link.label}
                     </Link>
                 ))}
-                <button className="px-4 rounded-md hover:bg-gray-300" onClick={() => alert('Downloading CV')} >
-                    <Image src={cvLogo} alt="Resume" width={30} height={30} className="rounded-full" />
-                </button>
+                <DownloadButton
+                    downloadText='Download CV'
+                    downloadName='EN_REAL_CV.pdf'
+                    href={downloadCVUrl}
+                />
             </nav>
 
         </header>
