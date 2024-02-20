@@ -57,9 +57,9 @@ const Nav: React.FC = () => {
                     </svg>
                 </button>
             </div>
-            <nav className={`flex ${isMenuOpen ? '' : 'hidden'} flex-col lg:flex lg:flex-row absolute lg:static top-full left-0 w-full lg:w-auto lg:shadow-none py-2`}>
+            <nav className={`flex ${isMenuOpen ? 'bg-accent-content text-white py-2 z-10' : 'hidden '} flex-col lg:flex lg:flex-row absolute lg:static top-full left-0 w-full lg:w-auto lg:shadow-none py-2`}>
                 {NAV_LINKS.map((link) => (
-                    <Link key={link.key} href={link.href} className={`flex items-center mx-1 hover:bg-gray-300 font-medium px-4 rounded-lg robotoslab-font ${link.href === pathname ? 'text-blue-600 border-b-2 border-blue-600' : ''}`}>
+                    <Link key={link.key} href={link.href} className={`flex ${isMenuOpen ? 'py-2' : ''} items-center mx-1 hover:bg-gray-300 font-medium px-4 rounded-lg robotoslab-font ${link.href === pathname ? 'text-blue-600 border-b-2 border-blue-600' : ''}`}>
                         {link.label}
                     </Link>
                 ))}
