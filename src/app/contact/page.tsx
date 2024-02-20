@@ -1,9 +1,12 @@
-import React from 'react'
+import React from 'react';
 
-const Contact = () => {
+const Blog = () => {
   return (
-    <div>Contact</div>
+    <div className="container mx-auto p-4 text-center">
+      <h1 className="text-2xl font-bold">Contact</h1>
+      <p className="mt-4 text-lg robotoslab-font">This section is still under development. Please check back later!</p>
+    </div>
   )
 }
 
-export default Contact
+export default Blog;

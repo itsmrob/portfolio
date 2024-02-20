@@ -9,8 +9,7 @@ const HeroSection: React.FC = () => {
                 </div>
                 <div className="flex flex-col">
                     <div className='py-5'>
-                        <h1 className="text-4xl sm:text-7xl" >I build web and mobile apps.</h1>
-
+                        <h1 className="text-4xl sm:text-7xl opacity-60" >I build web and mobile apps.</h1>
                     </div>
                     <p className="text-xl sm:text-3xl mt-4 robotoslab-font">
                         I'm a software engineer and full stack developer. I can make your ideas real.<br />
