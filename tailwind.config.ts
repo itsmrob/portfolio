@@ -9,6 +9,7 @@ const config: Config = {
   purge: ['./src/**/*.tsx'],
   darkMode: 'class',
   theme: {
+    // typography: (theme: null) => ({}),
     extend: {
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
@@ -19,7 +20,9 @@ const config: Config = {
   },
   plugins: [require("daisyui")],
   daisyui: {
-    themes: ["winter"]
+    // themes: ["winter"]
+    themes: ["light", "dark"],
   }
 }
+
 export default config

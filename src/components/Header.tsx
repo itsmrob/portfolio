@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useEffect, useState } from 'react';
+import React, { DOMElement, useEffect, useState } from 'react';
 import { useRouter, usePathname, useSearchParams } from 'next/navigation';
 import { NAV_LINKS } from '@/constants';
 import profilePic from '../../public/images/me.jpg';
@@ -9,9 +9,9 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 import DownloadButton from './DownloadButton/DownloadButton';
+import ThemeButton from './ThemeButton/ThemeButton';
 
 const Nav: React.FC = () => {
-
     const downloadCVUrl = "/files/EN_REAL_CV_2024.pdf";
 
     const router = useRouter();
@@ -31,7 +31,7 @@ const Nav: React.FC = () => {
             <Link href="/">
                 <div className="flex items-center space-x-4">
                     <Image src={profilePic} alt="Profile" width={40} height={40} className="rounded-full" />
-                    <span className="font-semibold text-black robotoslab-font">Roberto Lopez</span>
+                    <span className="font-semibold robotoslab-font">Roberto Lopez</span>
                     <span className="bg-blue-500 text-white text-xs rounded-full px-2 py-1">✓</span>
                 </div>
             </Link>
@@ -68,6 +68,7 @@ const Nav: React.FC = () => {
                     downloadName='EN_REAL_CV.pdf'
                     href={downloadCVUrl}
                 />
+                {isMenuOpen && (<ThemeButton />)}
             </nav>
 
         </header>
