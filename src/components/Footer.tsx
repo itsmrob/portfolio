@@ -19,7 +19,7 @@ const Footer: React.FC = () => {
                             height={40}
                         />
                     </div>
-                    <div className="flex flex-col items-center md:items-start text-black">
+                    <div className="flex flex-col items-center md:items-start ">
                         <span className="ml-4 text-sm robotoslab-font"> © Since 2018 </span>
                         <div className='flex space-x-2 items-center'>
                             <span className='ml-4 text-sm robotoslab-font'> Made in Guate! 🇬🇹</span>
@@ -27,7 +27,7 @@ const Footer: React.FC = () => {
                     </div>
                 </div>
                 <div className='flex flex-col md:flex-row space-y-3 md:space-y-0 md:space-x-5 items-center'>
-                    <div className="flex space-x-4 items-center text-black">
+                    <div className="flex space-x-4 items-center ">
                         {
                             FOOTER_LINKS.map((link) => (
                                 <Link href={link.href} key={link.key} className='hover:underline robotoslab-font'>
