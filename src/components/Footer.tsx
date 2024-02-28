@@ -41,9 +41,9 @@ const Footer: React.FC = () => {
                         {
                             FOOTER_SOCIAL.map((link) => (
                                 <div className='w-5 h-5 relative'>
-                                    <a href={link.href} key={link.key} aria-label={link.label} target='_blank' rel='noopener noreferrer"'>
+                                    <Link href={link.href} key={link.key} aria-label={link.label} target='_blank' rel='noopener noreferrer"'>
                                         <Image src={"/images" + link.icon || ""} alt={link.label} objectFit='cover' layout='fill' />
-                                    </a>
+                                    </Link>
                                 </div>
                             ))
                         }
