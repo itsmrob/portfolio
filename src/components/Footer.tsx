@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import Image from 'next/image';
 import profilePic from '@/images/me.jpg';
 
@@ -40,9 +40,9 @@ const Footer: React.FC = () => {
                     <div className="flex space-x-3 items-center ">
                         {
                             FOOTER_SOCIAL.map((link) => (
-                                <div className='w-5 h-5 relative'>
+                                <div className='relative'>
                                     <Link href={link.href} key={link.key} aria-label={link.label} target='_blank' rel='noopener noreferrer"'>
-                                        <Image src={"/images" + link.icon || ""} alt={link.label} objectFit='cover' layout='fill' />
+                                        {link.iconComponent && <link.iconComponent />}
                                     </Link>
                                 </div>
                             ))

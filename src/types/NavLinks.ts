@@ -3,4 +3,5 @@ export type NavLink = {
     key: string;
     label: string;
     icon?: string;
+    iconComponent?: React.ElementType;
 }
