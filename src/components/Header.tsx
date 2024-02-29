@@ -3,7 +3,7 @@
 import React, { DOMElement, useEffect, useState } from 'react';
 import { useRouter, usePathname, useSearchParams } from 'next/navigation';
 import { NAV_LINKS } from '@/constants';
-import profilePic from '../../public/images/me.jpg';
+import profilePic from '@/images/me.jpg';
 import cvLogo from '@/images/cv.png'
 import Link from 'next/link';
 import Image from 'next/image';

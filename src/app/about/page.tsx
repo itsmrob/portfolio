@@ -1,6 +1,5 @@
 import React from 'react'
 import Image from 'next/image'
-// import me from '../../../public/images/me.jpg'
 import InfoCard from '@/components/InfoCard/InfoCard'
 import meInTheLake from '../../../public/images/lake.jpg';
 
