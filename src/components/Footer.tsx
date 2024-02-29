@@ -12,7 +12,7 @@ const Footer: React.FC = () => {
                 <div className='flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-3 items-center'>
                     <div className='hidden md:block relative overflow-hidden rounded-full'>
                         <Image
-                            src="/images/me.jpg"
+                            src="/images/rob.png"
                             alt="Profile picture"
                             width={40}
                             height={40}

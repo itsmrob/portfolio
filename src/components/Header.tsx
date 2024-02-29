@@ -28,7 +28,7 @@ const Nav: React.FC = () => {
         <header className="flex justify-between align-middle max-container padding-container relative py-2 sm:py-12">
             <Link href="/">
                 <div className="flex items-center space-x-4">
-                    <Image src="/images/me.jpg" alt="Profile" width={40} height={40} className="rounded-full" />
+                    <Image src="/images/rob.png" alt="Profile" width={40} height={40} className="rounded-full" />
                     <span className="font-semibold robotoslab-font">Roberto Lopez</span>
                     <span className="bg-blue-500 text-white text-xs rounded-full px-2 py-1">✓</span>
                 </div>
