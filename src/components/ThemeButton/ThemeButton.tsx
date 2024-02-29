@@ -2,22 +2,22 @@
 import React, { useEffect, useState } from 'react'
 
 const ThemeButton: React.FC = () => {
-  const getLocalTheme = localStorage.getItem("theme") || "";
-  const [theme, setTheme] = useState(getLocalTheme)
+  const [theme, setTheme] = useState<string>(() => {
+    if (typeof window !== 'undefined') {
+      const storedTheme = localStorage.getItem('theme');
+      return storedTheme ? storedTheme : 'light';
+    }
+    return 'light';
+  });
 
   useEffect(() => {
-    localStorage.setItem("theme", theme)
-    const localTheme = localStorage.getItem("theme") || "";
-    document.documentElement.setAttribute("data-theme", localTheme)
-  }, [theme])
+    document.documentElement.setAttribute('data-theme', theme);
+    localStorage.setItem('theme', theme);
+  }, [theme]);
 
 
-  const handleToggle = (e: any) => {
-    if (e.target.checked) {
-      setTheme("dark");
-    } else {
-      setTheme("light");
-    }
+  const handleToggle = () => {
+    setTheme((prevTheme) => (prevTheme === 'light' ? 'dark' : 'light'));
   };
 
   return (

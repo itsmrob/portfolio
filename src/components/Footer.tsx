@@ -40,8 +40,8 @@ const Footer: React.FC = () => {
                     <div className="flex space-x-3 items-center ">
                         {
                             FOOTER_SOCIAL.map((link) => (
-                                <div className='relative'>
-                                    <Link href={link.href} key={link.key} aria-label={link.label} target='_blank' rel='noopener noreferrer"'>
+                                <div className='relative' key={link.key}>
+                                    <Link href={link.href} aria-label={link.label} target='_blank' rel='noopener noreferrer"'>
                                         {link.iconComponent && <link.iconComponent />}
                                     </Link>
                                 </div>
