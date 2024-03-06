@@ -6,7 +6,7 @@ const projects: Projects[] = [
         name: 'PetSign',
         description: 'A multi-platform app that allows you to find and explore missing pets around your area.',
         tecnologies: ['React Native', 'Expo', 'Firebase'],
-        imageUrl: '',
+        imageUrl: '/images/projects/new_petsign.png',
         projectUrl: '',
         codeUrl: '',
         projectPlatform: 'Mobile'
@@ -16,7 +16,7 @@ const projects: Projects[] = [
         name: 'LingoCards',
         description: 'A multi-platform app that works of a complement of any language app to increase your english vocabulary by using the flascards technique',
         tecnologies: ['React Native', 'Expo', 'Firebase', 'OxfordAPI'],
-        imageUrl: 'https://gitlab.com/uploads/-/system/project/avatar/37662205/unnamed.png?width=512',
+        imageUrl: '/images/projects/lingocards.png',
         projectUrl: '',
         codeUrl: '',
         projectPlatform: 'Mobile'
@@ -33,10 +33,10 @@ const projects: Projects[] = [
     },
     {
         id: '170968907853',
-        name: 'Inmunotec ShopApp',
+        name: 'Immunotec App',
         description: 'A mobile e-commerce app powered by Inmmunotec local seller.',
         tecnologies: ['ReactNative', 'MobX'],
-        imageUrl: 'https://gitlab.com/uploads/-/system/project/avatar/10902409/shopaap.jpg?width=512',
+        imageUrl: '/images/projects/immunotec.png',
         projectUrl: '',
         codeUrl: '',
         projectPlatform: 'Mobile'
@@ -46,7 +46,7 @@ const projects: Projects[] = [
         name: 'PhotoNotes',
         description: 'Take advantage of your smartphone camera to take your digital notes',
         tecnologies: ['ReactNative', 'Redux', 'Expo'],
-        imageUrl: 'https://gitlab.com/uploads/-/system/project/avatar/11513486/photo-icon.png?width=512',
+        imageUrl: '/images/projects/photonotes.png',
         projectUrl: '',
         codeUrl: '',
         projectPlatform: 'Mobile'

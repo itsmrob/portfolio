@@ -25,7 +25,7 @@ const Card: React.FC<CardProps> = ({
 }) => {
     return (
         <div className={`card w-96 shadow-xl ${containerStyle}`}>
-            {imageSrc && <Image src={imageSrc} alt={imageAlt} className='w-full' width={100} height={100} />}
+            <figure>{imageSrc && <Image className='mt-4' src={imageSrc} alt={imageAlt} width={250} height={250} />}</figure>
             <div className="card-body">
                 <h2 className="card-title">{title}</h2>
                 <p>{subtitle}</p>
