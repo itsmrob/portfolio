@@ -1,5 +1,6 @@
 import TechSection from "@/components/TechSection";
 import HeroSection from "@/components/HeroSection";
+import ProjectsSection from "@/components/ProjectsSection";
 import { TechStack } from "@/types/TechStack";
 import { Poppins, Nunito } from "next/font/google";
 import { techStack } from "@/constants/techStack";
@@ -11,6 +12,7 @@ export default function Home() {
     <div className={poppins.className}>
       <HeroSection />
       <TechSection technologies={techStack} />
+      <ProjectsSection />
     </div>
   );
 }
