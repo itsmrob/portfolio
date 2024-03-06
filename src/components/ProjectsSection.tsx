@@ -8,13 +8,12 @@ const ProjectsSection = () => {
     return (
         <div>
             <h4>Projects I've working on</h4>
-            <div className='flex justify-center lg:justify-start gap-10 flex-wrap '>
+            <div className='flex justify-center lg:justify-start gap-10 flex-wrap'>
                 {projects.map((currentProject) => (
                     <div key={currentProject.id}>
                         <Card
                             title={currentProject.name}
                             subtitle={currentProject.description}
-                            // imageSrc={currentProject.imageUrl}
                             imageAlt={currentProject.name}
                             buttonText='Learn more ->'
                             buttonStyle='btn btn-primary'
