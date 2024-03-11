@@ -7,6 +7,8 @@ interface CardProps {
     imageAlt?: string;
     title: string;
     subtitle: string;
+    width: number;
+    height: number;
     containerStyle?: string
     buttonText?: string;
     buttonStyle?: string;
@@ -16,6 +18,8 @@ interface CardProps {
 const Card: React.FC<CardProps> = ({
     imageSrc = "https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg",
     imageAlt = "Image",
+    width = 200,
+    height = 200,
     title,
     subtitle,
     containerStyle,
@@ -25,7 +29,7 @@ const Card: React.FC<CardProps> = ({
 }) => {
     return (
         <div className={`card w-96 shadow-xl ${containerStyle}`}>
-            <figure>{imageSrc && <Image className='mt-4' src={imageSrc} alt={imageAlt} width={250} height={250} />}</figure>
+            <figure>{imageSrc && <Image className='mt-4' src={imageSrc} alt={imageAlt} width={width} height={height} />}</figure>
             <div className="card-body">
                 <h2 className="card-title">{title}</h2>
                 <p>{subtitle}</p>

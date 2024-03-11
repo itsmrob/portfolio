@@ -4,7 +4,7 @@ const projects: Projects[] = [
     {
         id: '1709689073376',
         name: 'PetSign',
-        description: 'A multi-platform app that allows you to find and explore missing pets around your area.',
+        description: 'A multi-platform social media app to report and find missing pets around your area.',
         tecnologies: ['React Native', 'Expo', 'Firebase'],
         imageUrl: '/images/projects/new_petsign.png',
         projectUrl: '',
@@ -14,7 +14,7 @@ const projects: Projects[] = [
     {
         id: '1709689073785',
         name: 'LingoCards',
-        description: 'A multi-platform app that works of a complement of any language app to increase your english vocabulary by using the flascards technique',
+        description: 'A multi-platform app that works as a complement in your language learning process by using flashcars.',
         tecnologies: ['React Native', 'Expo', 'Firebase', 'OxfordAPI'],
         imageUrl: '/images/projects/lingocards.png',
         projectUrl: '',
@@ -44,7 +44,7 @@ const projects: Projects[] = [
     {
         id: '1709689077546',
         name: 'PhotoNotes',
-        description: 'Take advantage of your smartphone camera to take your digital notes',
+        description: 'Digital notes app to take adventage of your camera to save notes.',
         tecnologies: ['ReactNative', 'Redux', 'Expo'],
         imageUrl: '/images/projects/photonotes.png',
         projectUrl: '',
