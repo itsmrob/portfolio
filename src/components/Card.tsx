@@ -7,8 +7,8 @@ interface CardProps {
     imageAlt?: string;
     title: string;
     subtitle: string;
-    width: number;
-    height: number;
+    width?: number;
+    height?: number;
     containerStyle?: string
     buttonText?: string;
     buttonStyle?: string;
