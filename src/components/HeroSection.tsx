@@ -1,6 +1,7 @@
 'use client'
 import React from 'react';
 import Button from './Button';
+import Link from 'next/link';
 
 const HeroSection: React.FC = () => {
     return (
@@ -17,12 +18,14 @@ const HeroSection: React.FC = () => {
                         I'm a software engineer and full stack developer, I can make your ideas real.<br />
                     </p>
                     <div className='pt-5 pb-5 flex justify-center lg:justify-start'>
-                        <Button
-                            title='Explore my work'
-                            type='button'
-                            variant='btn btn-warning text-black robotoslab-font'
-                            onClick={() => console.log('Click the button')}
-                        />
+                        <Link href="#projects">
+                            <Button
+                                title='Explore my work'
+                                type='button'
+                                variant='btn btn-warning text-black robotoslab-font'
+                                onClick={() => console.log('Click the button')}
+                            />
+                        </Link>
                     </div>
                 </div>
             </div>

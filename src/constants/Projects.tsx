@@ -24,9 +24,9 @@ const projects: Projects[] = [
     {
         id: '170968907378',
         name: 'Personal Portfolio',
-        description: 'A responsive and modern web app using NextJS that helps you to know a little about my career and about me.',
+        description: 'A responsive and modern web app using NextJS to explore more about me and my work.',
         tecnologies: ['React', 'NextJS'],
-        imageUrl: '',
+        imageUrl: '/images/projects/portfolio.png',
         projectUrl: 'https://portfolio-u27k.vercel.app/',
         codeUrl: 'https://github.com/itsmrob/portfolio',
         projectPlatform: 'Web'

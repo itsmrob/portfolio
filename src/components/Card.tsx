@@ -28,7 +28,7 @@ const Card: React.FC<CardProps> = ({
     onClick
 }) => {
     return (
-        <div className={`card w-96 shadow-xl ${containerStyle}`}>
+        <div className={`card w-72 shadow-xl ${containerStyle}`}>
             <figure>{imageSrc && <Image className='mt-4' src={imageSrc} alt={imageAlt} width={width} height={height} />}</figure>
             <div className="card-body">
                 <h2 className="card-title">{title}</h2>
